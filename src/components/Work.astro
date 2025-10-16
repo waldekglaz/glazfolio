@@ -2,12 +2,12 @@
 const works = [{
     title:"Landing Pages",
     description:"Creating responsive and engaging landing pages that convert visitors into customers.",
-    image:"/images/landing-page.jpg",
+    image:"/works/designo.png",
     link:"#"
 }, {
     title:"Web Applications",
     description:"Building dynamic and interactive web applications using modern frameworks and technologies.",
-    image:"/images/web-app.jpg",
+    image:"/works/fem-entert.png",
     link:"#"
 }, {
     title:"E-commerce Sites",
@@ -27,10 +27,10 @@ const works = [{
 
 <section class="max-w-6xl mx-auto pb-6 pt-2 mb-12 my-4 ">
     <h2 class="text-6xl mb-6 text-right"><span class="font-bold ">What</span> do I do</span></h2>
-    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-0.5">
+    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-1 ">
     {works.map(work => (
-        <div class="mb-8 p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <img src={work.image} alt={work.title} class="w-full h-48 object-cover mb-4 rounded" />
+        <div class="mb-8 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 group">
+            <img src={work.image} alt={work.title} class="w-full h-48 object-cover mb-4 rounded grayscale transition duration-300 group-hover:grayscale-0" />
             <h3 class="text-2xl font-semibold mb-2">{work.title}</h3>
             <p class="text-gray-600">{work.description}</p>
         </div>
