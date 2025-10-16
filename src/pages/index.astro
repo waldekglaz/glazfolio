@@ -1,16 +1,75 @@
 ---
+import '../styles/global.css'
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
 
+const projects = [
+  {
+    title: 'Invoice App',
+    description: 'Fullstack app built with Next.js, Prisma, MongoDB, and Clerk.',
+    image: '/images/invoice-app.jpg',
+    link: '#'
+  },
+  {
+    title: 'Crypto Tracker',
+    description: 'Real-time cryptocurrency dashboard built with React and Node.js.',
+    image: '/images/crypto-tracker.jpg',
+    link: '#'
+  },
+  {
+    title: 'Email Builder',
+    description: 'Responsive email template builder using MJML and Next.js.',
+    image: '/images/email-builder.jpg',
+    link: '#'
+  },
+  {
+    title: 'AEM Component Library',
+    description: 'Reusable, cross-framework web components for AEM projects.',
+    image: '/images/aem-library.jpg',
+    link: '#'
+  }
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Glazfolio</title>
+  </head>
+  <body class="bg-[#f5f6fa] text-gray-800 font-sans">
+    <Header />
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+		<img src="/hero.png" alt="" width="300" height="300" class=" mb-6 " />
+      <h1 class="text-5xl md:text-sm font-bold mb-4 uppercase tracking-[20px]">Waldemar Glaz</h1>
+	  <p class="text-5xl md:text-xs font-bold mb-4 uppercase tracking-[5px]">Frontend developer</p>
+	 
+    </section>
+	<About />
+
+    <!-- Projects -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- {projects.map(project => <ProjectCard {...project} />)} -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Core Skills</h2>
+        <p class="text-gray-600 mb-8">
+          JavaScript · TypeScript · React · Next.js · Tailwind CSS · Node.js · AEM · Prisma · MongoDB
+        </p>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
 </html>
