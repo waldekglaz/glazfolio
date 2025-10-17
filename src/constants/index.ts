@@ -73,3 +73,12 @@ export const tech = [
   { name: "Linux", icon: "/tech/Linux.svg" },
   { name: "Jira", icon: "/tech/Jira.svg" },
 ];
+
+export const headerLinks = [
+  { name: "Home", href: "/" },
+  {
+    name: "Projects",
+    href: "/projects",
+  },
+  { name: "Contact", href: "/#contact" },
+];
