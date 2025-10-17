@@ -1,4 +1,4 @@
-const featuredProjects = [
+export const featuredProjects = [
   {
     title: "Web Applications",
     description:
@@ -39,4 +39,34 @@ const featuredProjects = [
   },
 ];
 
-export default featuredProjects;
+export const tech = [
+  { name: "HTML5", icon: "/tech/HTML5.svg" },
+  { name: "JavaScript", icon: "/tech/JavaScript.svg" },
+  { name: "TypeScript", icon: "/tech/TypeScript.svg" },
+  { name: "React", icon: "/tech/React.svg" },
+  { name: "Next.js", icon: "/tech/Next.js.svg" },
+  {
+    name: "Astro",
+    icon: "/tech/Astro.svg",
+  },
+  { name: "jQuery", icon: "/tech/jQuery.svg" },
+  { name: "CSS3", icon: "/tech/CSS3.svg" },
+  { name: "Tailwind CSS", icon: "/tech/TailwindCSS.svg" },
+  {
+    name: "Sass",
+    icon: "/tech/Sass.svg",
+  },
+  { name: "Material UI", icon: "/tech/MaterialUI.svg" },
+  { name: "WordPress", icon: "/tech/WordPress.svg" },
+  { name: "Node js", icon: "/tech/Node.js.svg" },
+  { name: "Cypress", icon: "/tech/Cypress.svg" },
+  { name: "Git", icon: "/tech/Git.svg" },
+  { name: "GitHub", icon: "/tech/GitHub.svg" },
+  { name: "GitLab", icon: "/tech/GitLab.svg" },
+  { name: "VS Code", icon: "/tech/VSCode.svg" },
+  { name: "Figma", icon: "/tech/Figma.svg" },
+  { name: "Adobe Photoshop", icon: "/tech/AdobePhotoshop.svg" },
+  { name: "Windows", icon: "/tech/Windows.svg" },
+  { name: "MacOS", icon: "/tech/Apple.svg" },
+  { name: "Linux", icon: "/tech/Linux.svg" },
+];

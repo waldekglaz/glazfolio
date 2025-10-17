@@ -1,21 +1,29 @@
 ---
-const tech=[{name:"HTML5",icon:"/tech/HTML5.svg"},{name:"JavaScript",icon:"/tech/JavaScript.svg"},{name:"TypeScript",icon:"/tech/TypeScript.svg"},{name:"React",icon:"/tech/React.svg"},{name:"Next.js",icon:"/tech/Next.js.svg"},{
-name:"Astro",icon:"/tech/Astro.svg"
-},{name:"CSS3",icon:"/tech/CSS3.svg"},{name:"Tailwind CSS",icon:"/tech/TailwindCSS.svg"},{
-name:"Sass",icon:"/tech/Sass.svg"
-},{name:"Material UI",
-icon:"/tech/MaterialUI.svg"
-},{name:"Node js",icon:"/tech/Node.js.svg"},{name:"Git",icon:"/tech/Git.svg"},{name:"GitHub",icon:"/tech/GitHub.svg"},{name:"VS Code",icon:"/tech/VSCode.svg"},{name:"Figma",icon:"/tech/Figma.svg"}];
+import { tech } from "../constants/index.ts";
+import TechItem from "./UI/TechItem.astro";
 ---
 
-<section class="max-w-6xl mx-auto pb-6 pt-2 mb-12 my-4 ">
-    <h2 class="text-6xl mb-4">My<span class="font-bold"> tech stack</span></h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 max-w-4xl mx-auto">
+<section class="max-w-6xl mx-auto pb-6 pt-2 mb-12 my-6 px-6">
+    <h2 class="text-6xl mb-6">My<span class="font-bold"> tech stack</span></h2>
+    <div class="grid grid-cols-8 sm:grid-cols-8 md:grid-cols-12 md:items-center gap-6 max-w-4xl mx-auto">
         {tech.map((item) => (
-            <div class="flex flex-col items-center">
-                <img src={item.icon} alt={item.name} class="w-16 h-16 mb-2 grayscale" />
-                <p class="text-sm text-center">{item.name}</p>
-            </div>
+            
+            <TechItem {...item} />
         ))}
     </div>
+</div>
 </section>
+
+<style>
+   .tech-circle {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+.tech-circle-item {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+} 
+</style>
