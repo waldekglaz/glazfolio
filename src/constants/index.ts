@@ -59,6 +59,8 @@ export const tech = [
   { name: "Material UI", icon: "/tech/MaterialUI.svg" },
   { name: "WordPress", icon: "/tech/WordPress.svg" },
   { name: "Node js", icon: "/tech/Node.js.svg" },
+  { name: "Python", icon: "/tech/Python.svg" },
+  { name: "PHP", icon: "/tech/PHP.svg" },
   { name: "Cypress", icon: "/tech/Cypress.svg" },
   { name: "Git", icon: "/tech/Git.svg" },
   { name: "GitHub", icon: "/tech/GitHub.svg" },
@@ -69,4 +71,5 @@ export const tech = [
   { name: "Windows", icon: "/tech/Windows.svg" },
   { name: "MacOS", icon: "/tech/Apple.svg" },
   { name: "Linux", icon: "/tech/Linux.svg" },
+  { name: "Jira", icon: "/tech/Jira.svg" },
 ];
